@@ -1,0 +1,10 @@
+{
+    "typescript.tsdk": "",
+    "prettier.configPath": "./prettier.config.js",
+     "eslint.run": "onSave",
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+
+}
