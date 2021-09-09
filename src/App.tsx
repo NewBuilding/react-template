@@ -1,9 +1,7 @@
-import React, { useRef, useState } from "react";
-// eslint-disable-next-line import/extensions
+import React, { useRef } from "react";
 import { importPsd } from "@/utils";
 
 const App: React.FC = () => {
-  // eslint-disable-next-line unicorn/no-null
   const inputEle = useRef<HTMLInputElement>(null);
   const onFileChange = async () => {
     const PSD = await importPsd();
@@ -12,7 +10,6 @@ const App: React.FC = () => {
     const file = files[0];
     const url = URL.createObjectURL(file);
     const psd = await PSD.fromURL(url);
-    // document.body.append(png);
     const tree = psd.tree();
     const img = tree.children()[0].layer.image.toPng();
     document.body.append(img);

@@ -73,5 +73,7 @@ module.exports = {
     "react/prop-types": 0,
     "promise/catch-or-return": 0,
     "@typescript-eslint/no-var-requires": 0,
+    "import/extensions": 0,
+    "unicorn/no-null": 0,
   },
 };
